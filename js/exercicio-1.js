@@ -13,3 +13,27 @@ botao.addEventListener("click",function(){
     document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 
 } );
+ 
+function enviarContato() {
+
+        // Obter o valor do campo de entrada
+        let nome = document.getElementById('nome').value;
+        let email = document.getElementById('email').value;
+        
+        // Criar um novo elemento li
+        let novoItem = document.createElement('li');
+        // Definir o texto do novo item como o valor do campo de entrada
+        novoItem.textContent = texto;
+        
+        // Obter a lista ul
+        var lista = document.getElementById('listaContatos');
+        
+        // Adicionar o novo item à lista
+        lista.appendChild(novoItem);
+        
+        // Limpar o campo de entrada
+        document.getElementById('nome').value = '';
+        document.getElementById('email').value = '';
+
+
+}
