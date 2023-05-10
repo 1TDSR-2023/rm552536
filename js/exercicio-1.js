@@ -14,26 +14,47 @@ botao.addEventListener("click",function(){
 
 } );
  
-function enviarContato() {
+function adicionarItem() {
 
-        // Obter o valor do campo de entrada
-        let nome = document.getElementById('nome').value;
-        let email = document.getElementById('email').value;
-        
-        // Criar um novo elemento li
-        let novoItem = document.createElement('li');
-        // Definir o texto do novo item como o valor do campo de entrada
-        novoItem.textContent = texto;
-        
-        // Obter a lista ul
-        var lista = document.getElementById('listaContatos');
-        
-        // Adicionar o novo item à lista
-        lista.appendChild(novoItem);
-        
-        // Limpar o campo de entrada
-        document.getElementById('nome').value = '';
-        document.getElementById('email').value = '';
-
-
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let lista = document.getElementById('lista');
+    
+    let novoItem = document.createElement('li');
+    novoItem.innerText = 'Nome: ' + nome + ', E-mail: ' + email;
+    
+    lista.appendChild(novoItem);
+    
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
 }
+
+let btn_trocar = document.getElementById("btn-trocar");
+
+    btn_trocar.addEventListener("click",function() {
+        let img = document.querySelector("#imagem_lobo")
+
+        if (img.getAttribute("src") == './img/lobo1.jpg') {
+            let img = document.querySelector("#imagem_lobo")
+            img.setAttribute('src', './img/lobo2.jpg');
+        }
+         else {
+            let img = document.querySelector("#imagem_lobo")
+            img.setAttribute('src', './img/lobo3.jpg');
+         };
+    });
+
+function exibirMensagem() {
+    var elementoMensagem = document.getElementById('mensagem');
+    elementoMensagem.textContent = "Mensagem exibida ao clicar no botão!";
+}
+
+function ocultarElemento() {
+    let paragrafo = document.getElementById("ocultarElemento");
+    if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+    } else {
+        paragrafo.style.display = "none";
+    }
+}
+
