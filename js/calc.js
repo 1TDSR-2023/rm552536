@@ -12,4 +12,6 @@ const calculoDoVisor = (visor)=>{
     visor.value = eval(visor.value);
 }
 
+
+
 // desafio 3 impeca a entrada de mais de uma vez do operador matematico
