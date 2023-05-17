@@ -1,0 +1,37 @@
+#btnSoma {
+    display: inline-flex;
+    width: 1.75%;
+    position: relative;
+    top: -21px;
+    height: 42px;
+}
+
+#btnDot {
+    width: 1.8%;
+}
+
+#btnResult {
+    width: 1.75%;
+}
+
+#btnSubtrai {
+    width: 1.75%;
+}
+
+#idVisor {
+    width: 7.5%;
+}
+
+#btn-C {
+    width: 1.75%;
+}
+
+#btn-√ {
+    width: 1.85%;
+}
+
+#btnDivide {
+    width: 1.75%;
+}
+
+
